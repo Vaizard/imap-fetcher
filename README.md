@@ -19,6 +19,6 @@ Usage
 
 ```
 php ./imap-fetcher.php # stdout output
-php ./imap-fetcher.php | uniq > list.csv # file output of unique addresses
+php ./imap-fetcher.php | sort -u > list.csv # file output of unique sorted addresses
 ```
 
