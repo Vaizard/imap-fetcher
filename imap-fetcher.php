@@ -1,6 +1,5 @@
 <?php
     include('./config.inc.php');
-    $hostname = '{imap.gmail.com:993/imap/ssl/novalidate-cert}INBOX';
 
     echo "fetching data for ".$username."\n";
     $inbox = imap_open($hostname,$username,$password) or die('Cannot connect to Gmail: ' . imap_last_error());
